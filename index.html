@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AssignmentFirstAllInOne</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="MainDiv">
+      <div class="HeadingWithDateTime">
+        <div class="Heading">
+          <span>Assignment-01-All-In-One</span>
+        </div>
+        <div class="DateTime">
+          <div class="Date">
+            <span id="Date"></span>
+          </div>
+          <div class="Time">
+            <span id="Time"></span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="CircumfranceCalc">
+          <div class="CircumfranceCalc-Title">
+            <span>Maths On Circle</span>
+          </div>
+          <div class="CircumfranceCalc-InputSection">
+            <input
+              id="RadiusInput"
+              type="number"
+              placeholder="Enter the Radius"
+              min="0"
+              onkeyup="CircleCalculator()"
+            />
+          </div>
+          <div class="CircumfranceCalc-ResultSection">
+            <ul>
+              <li class="CircumfranceCalc-ResultSection-Result">
+                Radius: <span id="radius"></span>
+              </li>
+              <li class="CircumfranceCalc-ResultSection-Result">
+                Circumfrance: <span id="circumfrance"></span>
+              </li>
+              <li class="CircumfranceCalc-ResultSection-Result">
+                Area: <span id="area"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="TipsCalc">
+          <div class="CircumfranceCalc-Title">
+            <span>Tips Calculator</span>
+          </div>
+          <span></span>
+          <div class="TipsCalcInput">
+            <input
+              id="TotalAmount"
+              type="number"
+              placeholder="Enter Total Amount"
+              min="0"
+              onkeyup="TipsCalculator()"
+            />
+            <input
+              id="TipsPercentage"
+              type="number"
+              placeholder="Enter the Percentage"
+              min="0"
+              max="100"
+              onkeyup="TipsCalculator()"
+            />
+          </div>
+          <div class="TipsCalc-ResultSection">
+            <ul>
+              <li class="TipsCalc-ResultSection-Result">
+                TotalAmount: <span id="totalAmount"></span>
+              </li>
+              <li class="TipsCalc-ResultSection-Result">
+                Tips(%): <span id="tipsPercentage"></span>
+              </li>
+              <li class="TipsCalc-ResultSection-Result">
+                TipsAmount: <span id="tipsResult"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ArrayManipulation">
+        <span id="ArrayManipulation" onmouseover="ArrayManipulation()"
+          >Are you looking for ArrayManipulation Program???</span
+        >
+        <div class="AboutUs">About Us</div>
+        <div class="logo">
+          <a href="https://atcoder.jp/users/pv0804034" target="_blank">
+            <img src="atcoder.png" id="Atcoder"
+          /></a>
+          <a href="https://codeforces.com/profile/pv0804034" target="_blank"
+            ><img src="codeforces.svg.png" id="Codeforces"
+          /></a>
+          <a href="https://www.facebook.com/pradeep.thecoder/" target="_blank"
+            ><img src="facebook.png" id="Facebook"
+          /></a>
+          <a href="https://www.hackerrank.com/pv0804034" target="_blank"
+            ><img src="hackerrank.png" id="Hackerrank"
+          /></a>
+          <a href="https://github.com/pv0804034" target="_blank">
+            <img src="github.png" id="Github"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
